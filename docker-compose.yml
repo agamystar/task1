@@ -1,0 +1,11 @@
+version: '3.7'
+services:    
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cloudaps_task    
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www/html
